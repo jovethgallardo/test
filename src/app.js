@@ -1,4 +1,3 @@
-
 //React
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
@@ -11,7 +10,7 @@ import { BrowserRouter} from 'react-router-dom';
 
 //CSS - Customized Material UI
 import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
-import Reboot from 'material-ui/Reboot';
+import CssBaseline from 'material-ui/CssBaseline';
 import defaultTheme from './themes/default';
 const theme = createMuiTheme(defaultTheme);
 
@@ -22,7 +21,7 @@ const render = Component => {
   ReactDOM.render(
     <AppContainer>
       <MuiThemeProvider theme={theme}>
-        <Reboot />
+        <CssBaseline />
         <BrowserRouter>
             <Component />
         </BrowserRouter>
